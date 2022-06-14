@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Домашний Заготовщик, Автоклав, домашние консервы">
     <title>Автоклавы «Домашний Заготовщик»</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220610112636">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220614095741">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -1626,10 +1626,23 @@
                             </div>
                         </div>
                         <form class="order__form jsOrderForm">
-                            <input type="text" class="order__input-name jsName" name="name" placeholder="Имя" required>
-                            <input type="text" class="order__input-phone jsPhone" name="phone" placeholder="Телефон" required>
+                            <input type="text" 
+                                   class="order__input-name jsName" 
+                                   name="name" 
+                                   placeholder="Имя" 
+                                   minlength="1"
+                                   maxlength="50"
+                                   required>
+                            <input type="text" 
+                                   class="order__input-phone jsPhone" 
+                                   name="phone" 
+                                   placeholder="Телефон" 
+                                   required>
                             <div class="order__promo jsPromoCode">
-                                <input type="text" class="order__input-promo jsPromoCodeInput" name="promo" placeholder="Промокод">
+                                <input type="text" 
+                                       class="order__input-promo jsPromoCodeInput" 
+                                       name="promo" 
+                                       placeholder="Промокод">
                                 <button type="button" class="order__promo-button button button_text_orange jsPromoCodeCheckButton">
                                     <span>Применить</span>
                                 </button>
@@ -1794,8 +1807,18 @@
             <h3 class="consultation-popup__header">Получить консультацию</h3>
             <div class="consultation-popup__text">Оставьте ваш номер телефона и&nbsp;мы вам перезвоним</div>
             <form class="consultation-popup__form jsOrderForm">
-                <input type="text" class="consultation-popup__input jsName" name="name" placeholder="Имя" required>
-                <input type="text" class="consultation-popup__input jsPhone" name="phone" placeholder="Телефон" required>
+                <input type="text" 
+                       class="consultation-popup__input jsName" 
+                       name="name" 
+                       placeholder="Имя" 
+                       minlength="1"
+                       maxlength="50"
+                       required>
+                <input type="text" 
+                       class="consultation-popup__input jsPhone" 
+                       name="phone" 
+                       placeholder="Телефон" 
+                       required>
                 <button type="button" data-popup="thanks" 
                         class="consultation-popup__btn button button_text_white popup-link jsOrderFormSubmit">
                     <span>Жду звонка</span>
@@ -1833,6 +1856,6 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20220610112636"></script>
+    <script src="js/app.min.js?_v=20220614095741"></script>
 </body>
 </html>
